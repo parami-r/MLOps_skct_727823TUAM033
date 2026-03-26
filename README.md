@@ -1,7 +1,7 @@
 # Product Review Sentiment Analysis - MLOps Project
 
 ## Student Information
-- **Name**: Student Name
+- **Name**: Parameshwari R
 - **Roll Number**: 727823TUAM033
 - **Course**: MLOps
 - **Experiment Name**: SKCT_33_ProductReview
