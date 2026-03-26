@@ -1,0 +1,138 @@
+# Azure Pipeline Configuration for Product Review Sentiment Analysis
+# Roll Number: 727823TUAM033
+
+name: pipeline_727823TUAM033.yml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  experiment_name: 'SKCT_33_ProductReview_727823TUAM033'
+  pythonVersion: '3.8'
+
+stages:
+- stage: data_prep
+  displayName: 'Data Preparation Stage'
+  jobs:
+  - job: data_preparation
+    displayName: 'Data Preparation'
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python $(pythonVersion)'
+    
+    - script: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+      displayName: 'Install dependencies'
+    
+    - script: |
+        echo "Roll Number: 727823TUAM033"
+        echo "Timestamp: $(date)"
+        echo "Starting data preparation..."
+        cd code
+        python data_prep.py
+      displayName: 'Run data preparation'
+    
+    - publish: '$(Build.SourcesDirectory)/data/processed'
+      artifact: processed_data
+      displayName: 'Publish processed data'
+
+- stage: train
+  displayName: 'Model Training Stage'
+  dependsOn: data_prep
+  jobs:
+  - job: model_training
+    displayName: 'Model Training'
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python $(pythonVersion)'
+    
+    - download: current
+      artifact: processed_data
+      displayName: 'Download processed data'
+    
+    - script: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+      displayName: 'Install dependencies'
+    
+    - script: |
+        echo "Roll Number: 727823TUAM033"
+        echo "Timestamp: $(date)"
+        echo "Starting model training..."
+        echo "Experiment Name: $(experiment_name)"
+        cd code
+        python train_pipeline.py
+      displayName: 'Run model training'
+      env:
+        MLFLOW_EXPERIMENT_NAME: $(experiment_name)
+    
+    - publish: '$(Build.SourcesDirectory)/models'
+      artifact: trained_models
+      displayName: 'Publish trained models'
+
+- stage: evaluate
+  displayName: 'Model Evaluation Stage'
+  dependsOn: train
+  jobs:
+  - job: model_evaluation
+    displayName: 'Model Evaluation'
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python $(pythonVersion)'
+    
+    - download: current
+      artifact: processed_data
+      displayName: 'Download processed data'
+    
+    - download: current
+      artifact: trained_models
+      displayName: 'Download trained models'
+    
+    - script: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+      displayName: 'Install dependencies'
+    
+    - script: |
+        echo "Roll Number: 727823TUAM033"
+        echo "Timestamp: $(date)"
+        echo "Starting model evaluation..."
+        echo "Experiment Name: $(experiment_name)"
+        cd code
+        python evaluate.py
+      displayName: 'Run model evaluation'
+      env:
+        MLFLOW_EXPERIMENT_NAME: $(experiment_name)
+    
+    - publish: '$(Build.SourcesDirectory)/results'
+      artifact: evaluation_results
+      displayName: 'Publish evaluation results'
+
+# Pipeline metadata
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: main
+
+# Additional configuration for MLflow tracking
+pr: none
+
+# Schedule for nightly runs (optional)
+schedules:
+- cron: "0 2 * * *"
+  displayName: Nightly model training and evaluation
+  branches:
+    include:
+    - main
+  always: true

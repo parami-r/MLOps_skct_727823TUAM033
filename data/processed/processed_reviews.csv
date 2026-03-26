@@ -1,0 +1,115 @@
+review,sentiment,cleaned_review,sentiment_encoded
+This product is amazing! I love it so much.,positive,product amazing love much,1
+"Terrible quality, waste of money.",negative,terrible quality waste money,0
+"Good value for the price, would recommend.",positive,good value price would recommend,1
+"Not what I expected, very disappointed.",negative,expected disappointed,0
+Excellent customer service and fast shipping.,positive,excellent customer service fast shipping,1
+Product broke after one week of use.,negative,product broke one week use,0
+Best purchase I've made this year!,positive,best purchase ive made year,1
+"Poor packaging, item arrived damaged.",negative,poor packaging item arrived damaged,0
+Great features and easy to use.,positive,great feature easy use,1
+Overpriced for the quality offered.,negative,overpriced quality offered,0
+"Fantastic build quality, very durable.",positive,fantastic build quality durable,1
+Does not work as advertised.,negative,work advertised,0
+Very satisfied with this purchase.,positive,satisfied purchase,1
+Customer support was unhelpful.,negative,customer support unhelpful,0
+Exceeded my expectations completely!,positive,exceeded expectation completely,1
+"Defective product, had to return.",negative,defective product return,0
+Highly recommend to everyone.,positive,highly recommend everyone,1
+Waste of time and money.,negative,waste time money,0
+"Perfect for my needs, love it!",positive,perfect need love,1
+Product stopped working after a month.,negative,product stopped working month,0
+Outstanding quality and performance.,positive,outstanding quality performance,1
+"Very cheap materials, feels fragile.",negative,cheap material feel fragile,0
+Great design and functionality.,positive,great design functionality,1
+Doesn't match the description at all.,negative,doesnt match description,0
+Impressed with the overall quality.,positive,impressed overall quality,1
+Had issues with the setup process.,negative,issue setup process,0
+"Excellent value, would buy again.",positive,excellent value would buy,1
+Product arrived with missing parts.,negative,product arrived missing part,0
+Super happy with this purchase!,positive,super happy purchase,1
+Not worth the price tag.,negative,worth price tag,0
+Works exactly as described.,positive,work exactly described,1
+Poor user experience overall.,negative,poor user experience overall,0
+Love the sleek design and features.,positive,love sleek design feature,1
+Quality control seems to be lacking.,negative,quality control seems lacking,0
+Perfect gift for my family.,positive,perfect gift family,1
+Regret buying this product.,negative,regret buying product,0
+"Amazing features, very innovative.",positive,amazing feature innovative,1
+Too complicated for everyday use.,negative,complicated everyday use,0
+Great customer support experience.,positive,great customer support experience,1
+Product feels cheap and flimsy.,negative,product feel cheap flimsy,0
+Best in class performance!,positive,best class performance,1
+Doesn't live up to the hype.,negative,doesnt live hype,0
+Very pleased with the quality.,positive,pleased quality,1
+Had to return the defective item.,negative,return defective item,0
+Exceeded all my expectations!,positive,exceeded expectation,1
+Disappointing performance overall.,negative,disappointing performance overall,0
+"Solid construction, built to last.",positive,solid construction built last,1
+Misleading product description.,negative,misleading product description,0
+Worth every penny spent.,positive,worth every penny spent,1
+Product failed after minimal use.,negative,product failed minimal use,0
+Outstanding customer service!,positive,outstanding customer service,1
+Quality doesn't match the price.,negative,quality doesnt match price,0
+Perfect solution for my needs.,positive,perfect solution need,1
+Very poor build quality.,negative,poor build quality,0
+Love everything about this product!,positive,love everything product,1
+Not satisfied with the purchase.,negative,satisfied purchase,0
+"Great investment, highly recommended.",positive,great investment highly recommended,1
+Product arrived in poor condition.,negative,product arrived poor condition,0
+Fantastic user experience overall.,positive,fantastic user experience overall,1
+Doesn't work as expected.,negative,doesnt work expected,0
+Superior quality and craftsmanship.,positive,superior quality craftsmanship,1
+Had multiple issues with this item.,negative,multiple issue item,0
+Exactly what I was looking for!,positive,exactly looking,1
+Overhyped and underdelivered.,negative,overhyped underdelivered,0
+Brilliant design and functionality.,positive,brilliant design functionality,1
+Poor value for money.,negative,poor value money,0
+Very satisfied customer here!,positive,satisfied customer,1
+Product broke during first use.,negative,product broke first use,0
+Exceptional quality and service.,positive,exceptional quality service,1
+Not worth the investment.,negative,worth investment,0
+Perfect size and functionality.,positive,perfect size functionality,1
+Multiple defects found.,negative,multiple defect found,0
+"Great product, would definitely buy again.",positive,great product would definitely buy,1
+Very disappointed with quality.,negative,disappointed quality,0
+Outstanding performance and features.,positive,outstanding performance feature,1
+Product doesn't meet basic standards.,negative,product doesnt meet basic standard,0
+Love the attention to detail.,positive,love attention detail,1
+Had to contact support multiple times.,negative,contact support multiple time,0
+Excellent build and finish quality.,positive,excellent build finish quality,1
+Doesn't perform as advertised.,negative,doesnt perform advertised,0
+Very happy with this decision!,positive,happy decision,1
+Poor manufacturing quality.,negative,poor manufacturing quality,0
+Great features at reasonable price.,positive,great feature reasonable price,1
+Product arrived damaged and unusable.,negative,product arrived damaged unusable,0
+Superior to competitors in every way.,positive,superior competitor every way,1
+Regret this purchase completely.,negative,regret purchase completely,0
+Perfect for everyday use.,positive,perfect everyday use,1
+Quality is below average.,negative,quality average,0
+Amazing value for money!,positive,amazing value money,1
+Multiple functionality issues.,negative,multiple functionality issue,0
+Excellent product overall experience.,positive,excellent product overall experience,1
+Doesn't justify the high price.,negative,doesnt justify high price,0
+Love the innovative features.,positive,love innovative feature,1
+Poor customer service experience.,negative,poor customer service experience,0
+Great quality and fast delivery.,positive,great quality fast delivery,1
+Product stopped working unexpectedly.,negative,product stopped working unexpectedly,0
+Very impressed with the quality.,positive,impressed quality,1
+Not as described in listing.,negative,described listing,0
+Perfect addition to my setup!,positive,perfect addition setup,1
+Build quality could be better.,negative,build quality could better,0
+Outstanding value proposition.,positive,outstanding value proposition,1
+Had reliability issues.,negative,reliability issue,0
+Great design meets functionality.,positive,great design meet functionality,1
+Doesn't meet quality standards.,negative,doesnt meet quality standard,0
+Very pleased with purchase decision.,positive,pleased purchase decision,1
+Product had multiple defects.,negative,product multiple defect,0
+Excellent investment for the price.,positive,excellent investment price,1
+Very poor user experience.,negative,poor user experience,0
+Love the premium feel and quality.,positive,love premium feel quality,1
+Doesn't work reliably.,negative,doesnt work reliably,0
+Great performance and features.,positive,great performance feature,1
+Quality control needs improvement.,negative,quality control need improvement,0
+"Perfect solution, highly recommended!",positive,perfect solution highly recommended,1
+Product failed to meet expectations.,negative,product failed meet expectation,0
